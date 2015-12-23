@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WATCHMOVIEModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="WATCHMOVIEEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CINAME_COMMENT" EntityType="WATCHMOVIEModel.CINAME_COMMENT" />
+    <EntitySet Name="CINEMA" EntityType="WATCHMOVIEModel.CINEMA" />
+    <EntitySet Name="CINEMA_PICTURE" EntityType="WATCHMOVIEModel.CINEMA_PICTURE" />
+    <EntitySet Name="COLLECTION" EntityType="WATCHMOVIEModel.COLLECTION" />
+    <EntitySet Name="CRITIC_COMMENT" EntityType="WATCHMOVIEModel.CRITIC_COMMENT" />
+    <EntitySet Name="FILM_CRITIC" EntityType="WATCHMOVIEModel.FILM_CRITIC" />
+    <EntitySet Name="MOVIE" EntityType="WATCHMOVIEModel.MOVIE" />
+    <EntitySet Name="MOVIE_COMMENT" EntityType="WATCHMOVIEModel.MOVIE_COMMENT" />
+    <EntitySet Name="MOVIE_PICTURE" EntityType="WATCHMOVIEModel.MOVIE_PICTURE" />
+    <EntitySet Name="MOVIE_SCHEDULE" EntityType="WATCHMOVIEModel.MOVIE_SCHEDULE" />
+    <EntitySet Name="RUSER" EntityType="WATCHMOVIEModel.RUSER" />
+    <AssociationSet Name="FK_CINAME_COMMENT_CINEMA" Association="WATCHMOVIEModel.FK_CINAME_COMMENT_CINEMA">
+      <End Role="CINEMA" EntitySet="CINEMA" />
+      <End Role="CINAME_COMMENT" EntitySet="CINAME_COMMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CINAME_COMMENT_USER" Association="WATCHMOVIEModel.FK_CINAME_COMMENT_USER">
+      <End Role="RUSER" EntitySet="RUSER" />
+      <End Role="CINAME_COMMENT" EntitySet="CINAME_COMMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CINEMA_PICTURE_CINEMA" Association="WATCHMOVIEModel.FK_CINEMA_PICTURE_CINEMA">
+      <End Role="CINEMA" EntitySet="CINEMA" />
+      <End Role="CINEMA_PICTURE" EntitySet="CINEMA_PICTURE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MOVIE_SCHEDULE_CINEMA" Association="WATCHMOVIEModel.FK_MOVIE_SCHEDULE_CINEMA">
+      <End Role="CINEMA" EntitySet="CINEMA" />
+      <End Role="MOVIE_SCHEDULE" EntitySet="MOVIE_SCHEDULE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COLLECTION_COLLECTION" Association="WATCHMOVIEModel.FK_COLLECTION_COLLECTION">
+      <End Role="RUSER" EntitySet="RUSER" />
+      <End Role="COLLECTION" EntitySet="COLLECTION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COLLECTION_MOVIE" Association="WATCHMOVIEModel.FK_COLLECTION_MOVIE">
+      <End Role="MOVIE" EntitySet="MOVIE" />
+      <End Role="COLLECTION" EntitySet="COLLECTION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CRITIC_COMMENT_FILM_CRITIC" Association="WATCHMOVIEModel.FK_CRITIC_COMMENT_FILM_CRITIC">
+      <End Role="FILM_CRITIC" EntitySet="FILM_CRITIC" />
+      <End Role="CRITIC_COMMENT" EntitySet="CRITIC_COMMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CRITIC_COMMENT_USER" Association="WATCHMOVIEModel.FK_CRITIC_COMMENT_USER">
+      <End Role="RUSER" EntitySet="RUSER" />
+      <End Role="CRITIC_COMMENT" EntitySet="CRITIC_COMMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FILM_CRITIC_FILM_CRITIC" Association="WATCHMOVIEModel.FK_FILM_CRITIC_FILM_CRITIC">
+      <End Role="RUSER" EntitySet="RUSER" />
+      <End Role="FILM_CRITIC" EntitySet="FILM_CRITIC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FILM_CRITIC_MOVIE" Association="WATCHMOVIEModel.FK_FILM_CRITIC_MOVIE">
+      <End Role="MOVIE" EntitySet="MOVIE" />
+      <End Role="FILM_CRITIC" EntitySet="FILM_CRITIC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MOVIE_COMMENT_MOVIE" Association="WATCHMOVIEModel.FK_MOVIE_COMMENT_MOVIE">
+      <End Role="MOVIE" EntitySet="MOVIE" />
+      <End Role="MOVIE_COMMENT" EntitySet="MOVIE_COMMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MOVIE_PICTURE_MOVIE" Association="WATCHMOVIEModel.FK_MOVIE_PICTURE_MOVIE">
+      <End Role="MOVIE" EntitySet="MOVIE" />
+      <End Role="MOVIE_PICTURE" EntitySet="MOVIE_PICTURE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MOVIE_SCHEDULE_MOVIE" Association="WATCHMOVIEModel.FK_MOVIE_SCHEDULE_MOVIE">
+      <End Role="MOVIE" EntitySet="MOVIE" />
+      <End Role="MOVIE_SCHEDULE" EntitySet="MOVIE_SCHEDULE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MOVIE_COMMENT_USER" Association="WATCHMOVIEModel.FK_MOVIE_COMMENT_USER">
+      <End Role="RUSER" EntitySet="RUSER" />
+      <End Role="MOVIE_COMMENT" EntitySet="MOVIE_COMMENT" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CINAME_COMMENT">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="cinema_id" Type="Int32" />
+    <Property Name="time" Type="DateTime" />
+    <Property Name="body" Type="String" MaxLength="400" Unicode="false" FixedLength="false" />
+    <Property Name="support" Type="Int16" />
+    <Property Name="oppose" Type="Int16" />
+    <NavigationProperty Name="CINEMA" Relationship="WATCHMOVIEModel.FK_CINAME_COMMENT_CINEMA" FromRole="CINAME_COMMENT" ToRole="CINEMA" />
+    <NavigationProperty Name="RUSER" Relationship="WATCHMOVIEModel.FK_CINAME_COMMENT_USER" FromRole="CINAME_COMMENT" ToRole="RUSER" />
+  </EntityType>
+  <EntityType Name="CINEMA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="address" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="phone" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="start_work_time" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="end_work_time" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="introduction" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="website" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="rank" Type="Byte" />
+    <Property Name="rank_number" Type="Int32" />
+    <Property Name="path" Type="String" MaxLength="400" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CINAME_COMMENT" Relationship="WATCHMOVIEModel.FK_CINAME_COMMENT_CINEMA" FromRole="CINEMA" ToRole="CINAME_COMMENT" />
+    <NavigationProperty Name="CINEMA_PICTURE" Relationship="WATCHMOVIEModel.FK_CINEMA_PICTURE_CINEMA" FromRole="CINEMA" ToRole="CINEMA_PICTURE" />
+    <NavigationProperty Name="MOVIE_SCHEDULE" Relationship="WATCHMOVIEModel.FK_MOVIE_SCHEDULE_CINEMA" FromRole="CINEMA" ToRole="MOVIE_SCHEDULE" />
+  </EntityType>
+  <EntityType Name="CINEMA_PICTURE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="cinema_id" Type="Int32" />
+    <Property Name="type" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="path" Type="String" MaxLength="400" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CINEMA" Relationship="WATCHMOVIEModel.FK_CINEMA_PICTURE_CINEMA" FromRole="CINEMA_PICTURE" ToRole="CINEMA" />
+  </EntityType>
+  <EntityType Name="COLLECTION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="movie_id" Type="Int32" />
+    <NavigationProperty Name="RUSER" Relationship="WATCHMOVIEModel.FK_COLLECTION_COLLECTION" FromRole="COLLECTION" ToRole="RUSER" />
+    <NavigationProperty Name="MOVIE" Relationship="WATCHMOVIEModel.FK_COLLECTION_MOVIE" FromRole="COLLECTION" ToRole="MOVIE" />
+  </EntityType>
+  <EntityType Name="CRITIC_COMMENT">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="critic_id" Type="Int32" />
+    <Property Name="time" Type="DateTime" />
+    <Property Name="body" Type="String" MaxLength="400" Unicode="false" FixedLength="false" />
+    <Property Name="support" Type="Int16" />
+    <Property Name="oppose" Type="Int16" />
+    <NavigationProperty Name="FILM_CRITIC" Relationship="WATCHMOVIEModel.FK_CRITIC_COMMENT_FILM_CRITIC" FromRole="CRITIC_COMMENT" ToRole="FILM_CRITIC" />
+    <NavigationProperty Name="RUSER" Relationship="WATCHMOVIEModel.FK_CRITIC_COMMENT_USER" FromRole="CRITIC_COMMENT" ToRole="RUSER" />
+  </EntityType>
+  <EntityType Name="FILM_CRITIC">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="movie_id" Type="Int32" />
+    <Property Name="title" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="body" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="time" Type="DateTime" />
+    <Property Name="support" Type="Int16" />
+    <Property Name="oppose" Type="Int16" />
+    <NavigationProperty Name="CRITIC_COMMENT" Relationship="WATCHMOVIEModel.FK_CRITIC_COMMENT_FILM_CRITIC" FromRole="FILM_CRITIC" ToRole="CRITIC_COMMENT" />
+    <NavigationProperty Name="RUSER" Relationship="WATCHMOVIEModel.FK_FILM_CRITIC_FILM_CRITIC" FromRole="FILM_CRITIC" ToRole="RUSER" />
+    <NavigationProperty Name="MOVIE" Relationship="WATCHMOVIEModel.FK_FILM_CRITIC_MOVIE" FromRole="FILM_CRITIC" ToRole="MOVIE" />
+  </EntityType>
+  <EntityType Name="MOVIE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="director" Type="String" MaxLength="230" Unicode="false" FixedLength="false" />
+    <Property Name="actor" Type="String" MaxLength="400" Unicode="false" FixedLength="false" />
+    <Property Name="kind" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="region" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="last_time" Type="Int16" />
+    <Property Name="first_showtime" Type="DateTime" />
+    <Property Name="introduction" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="rank" Type="Byte" />
+    <Property Name="rank_number" Type="Int16" />
+    <Property Name="click_number" Type="Int16" />
+    <Property Name="path" Type="String" MaxLength="400" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="COLLECTION" Relationship="WATCHMOVIEModel.FK_COLLECTION_MOVIE" FromRole="MOVIE" ToRole="COLLECTION" />
+    <NavigationProperty Name="FILM_CRITIC" Relationship="WATCHMOVIEModel.FK_FILM_CRITIC_MOVIE" FromRole="MOVIE" ToRole="FILM_CRITIC" />
+    <NavigationProperty Name="MOVIE_COMMENT" Relationship="WATCHMOVIEModel.FK_MOVIE_COMMENT_MOVIE" FromRole="MOVIE" ToRole="MOVIE_COMMENT" />
+    <NavigationProperty Name="MOVIE_PICTURE" Relationship="WATCHMOVIEModel.FK_MOVIE_PICTURE_MOVIE" FromRole="MOVIE" ToRole="MOVIE_PICTURE" />
+    <NavigationProperty Name="MOVIE_SCHEDULE" Relationship="WATCHMOVIEModel.FK_MOVIE_SCHEDULE_MOVIE" FromRole="MOVIE" ToRole="MOVIE_SCHEDULE" />
+  </EntityType>
+  <EntityType Name="MOVIE_COMMENT">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" />
+    <Property Name="movie_id" Type="Int32" />
+    <Property Name="time" Type="DateTime" />
+    <Property Name="body" Type="String" MaxLength="400" Unicode="false" FixedLength="false" />
+    <Property Name="support" Type="Int16" />
+    <Property Name="oppose" Type="Int16" />
+    <NavigationProperty Name="MOVIE" Relationship="WATCHMOVIEModel.FK_MOVIE_COMMENT_MOVIE" FromRole="MOVIE_COMMENT" ToRole="MOVIE" />
+    <NavigationProperty Name="RUSER" Relationship="WATCHMOVIEModel.FK_MOVIE_COMMENT_USER" FromRole="MOVIE_COMMENT" ToRole="RUSER" />
+  </EntityType>
+  <EntityType Name="MOVIE_PICTURE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="movie_id" Type="Int32" />
+    <Property Name="type" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="path" Type="String" MaxLength="400" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="MOVIE" Relationship="WATCHMOVIEModel.FK_MOVIE_PICTURE_MOVIE" FromRole="MOVIE_PICTURE" ToRole="MOVIE" />
+  </EntityType>
+  <EntityType Name="MOVIE_SCHEDULE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="movie_id" Type="Int32" />
+    <Property Name="cinema_id" Type="Int32" />
+    <Property Name="showtime" Type="DateTime" />
+    <Property Name="price" Type="Int32" />
+    <Property Name="kind" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="book_website" Type="String" MaxLength="400" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CINEMA" Relationship="WATCHMOVIEModel.FK_MOVIE_SCHEDULE_CINEMA" FromRole="MOVIE_SCHEDULE" ToRole="CINEMA" />
+    <NavigationProperty Name="MOVIE" Relationship="WATCHMOVIEModel.FK_MOVIE_SCHEDULE_MOVIE" FromRole="MOVIE_SCHEDULE" ToRole="MOVIE" />
+  </EntityType>
+  <EntityType Name="RUSER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="address" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="like_kind" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CINAME_COMMENT" Relationship="WATCHMOVIEModel.FK_CINAME_COMMENT_USER" FromRole="RUSER" ToRole="CINAME_COMMENT" />
+    <NavigationProperty Name="COLLECTION" Relationship="WATCHMOVIEModel.FK_COLLECTION_COLLECTION" FromRole="RUSER" ToRole="COLLECTION" />
+    <NavigationProperty Name="CRITIC_COMMENT" Relationship="WATCHMOVIEModel.FK_CRITIC_COMMENT_USER" FromRole="RUSER" ToRole="CRITIC_COMMENT" />
+    <NavigationProperty Name="FILM_CRITIC" Relationship="WATCHMOVIEModel.FK_FILM_CRITIC_FILM_CRITIC" FromRole="RUSER" ToRole="FILM_CRITIC" />
+    <NavigationProperty Name="MOVIE_COMMENT" Relationship="WATCHMOVIEModel.FK_MOVIE_COMMENT_USER" FromRole="RUSER" ToRole="MOVIE_COMMENT" />
+  </EntityType>
+  <Association Name="FK_CINAME_COMMENT_CINEMA">
+    <End Role="CINEMA" Type="WATCHMOVIEModel.CINEMA" Multiplicity="0..1" />
+    <End Role="CINAME_COMMENT" Type="WATCHMOVIEModel.CINAME_COMMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CINEMA">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CINAME_COMMENT">
+        <PropertyRef Name="cinema_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CINAME_COMMENT_USER">
+    <End Role="RUSER" Type="WATCHMOVIEModel.RUSER" Multiplicity="0..1" />
+    <End Role="CINAME_COMMENT" Type="WATCHMOVIEModel.CINAME_COMMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RUSER">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CINAME_COMMENT">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CINEMA_PICTURE_CINEMA">
+    <End Role="CINEMA" Type="WATCHMOVIEModel.CINEMA" Multiplicity="0..1" />
+    <End Role="CINEMA_PICTURE" Type="WATCHMOVIEModel.CINEMA_PICTURE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CINEMA">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CINEMA_PICTURE">
+        <PropertyRef Name="cinema_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MOVIE_SCHEDULE_CINEMA">
+    <End Role="CINEMA" Type="WATCHMOVIEModel.CINEMA" Multiplicity="0..1" />
+    <End Role="MOVIE_SCHEDULE" Type="WATCHMOVIEModel.MOVIE_SCHEDULE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CINEMA">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MOVIE_SCHEDULE">
+        <PropertyRef Name="cinema_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COLLECTION_COLLECTION">
+    <End Role="RUSER" Type="WATCHMOVIEModel.RUSER" Multiplicity="0..1" />
+    <End Role="COLLECTION" Type="WATCHMOVIEModel.COLLECTION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RUSER">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="COLLECTION">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COLLECTION_MOVIE">
+    <End Role="MOVIE" Type="WATCHMOVIEModel.MOVIE" Multiplicity="0..1" />
+    <End Role="COLLECTION" Type="WATCHMOVIEModel.COLLECTION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MOVIE">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="COLLECTION">
+        <PropertyRef Name="movie_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CRITIC_COMMENT_FILM_CRITIC">
+    <End Role="FILM_CRITIC" Type="WATCHMOVIEModel.FILM_CRITIC" Multiplicity="0..1" />
+    <End Role="CRITIC_COMMENT" Type="WATCHMOVIEModel.CRITIC_COMMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FILM_CRITIC">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CRITIC_COMMENT">
+        <PropertyRef Name="critic_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CRITIC_COMMENT_USER">
+    <End Role="RUSER" Type="WATCHMOVIEModel.RUSER" Multiplicity="0..1" />
+    <End Role="CRITIC_COMMENT" Type="WATCHMOVIEModel.CRITIC_COMMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RUSER">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="CRITIC_COMMENT">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FILM_CRITIC_FILM_CRITIC">
+    <End Role="RUSER" Type="WATCHMOVIEModel.RUSER" Multiplicity="0..1" />
+    <End Role="FILM_CRITIC" Type="WATCHMOVIEModel.FILM_CRITIC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RUSER">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FILM_CRITIC">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FILM_CRITIC_MOVIE">
+    <End Role="MOVIE" Type="WATCHMOVIEModel.MOVIE" Multiplicity="0..1" />
+    <End Role="FILM_CRITIC" Type="WATCHMOVIEModel.FILM_CRITIC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MOVIE">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="FILM_CRITIC">
+        <PropertyRef Name="movie_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MOVIE_COMMENT_MOVIE">
+    <End Role="MOVIE" Type="WATCHMOVIEModel.MOVIE" Multiplicity="0..1" />
+    <End Role="MOVIE_COMMENT" Type="WATCHMOVIEModel.MOVIE_COMMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MOVIE">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MOVIE_COMMENT">
+        <PropertyRef Name="movie_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MOVIE_PICTURE_MOVIE">
+    <End Role="MOVIE" Type="WATCHMOVIEModel.MOVIE" Multiplicity="0..1" />
+    <End Role="MOVIE_PICTURE" Type="WATCHMOVIEModel.MOVIE_PICTURE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MOVIE">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MOVIE_PICTURE">
+        <PropertyRef Name="movie_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MOVIE_SCHEDULE_MOVIE">
+    <End Role="MOVIE" Type="WATCHMOVIEModel.MOVIE" Multiplicity="0..1" />
+    <End Role="MOVIE_SCHEDULE" Type="WATCHMOVIEModel.MOVIE_SCHEDULE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MOVIE">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MOVIE_SCHEDULE">
+        <PropertyRef Name="movie_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MOVIE_COMMENT_USER">
+    <End Role="RUSER" Type="WATCHMOVIEModel.RUSER" Multiplicity="0..1" />
+    <End Role="MOVIE_COMMENT" Type="WATCHMOVIEModel.MOVIE_COMMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RUSER">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="MOVIE_COMMENT">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

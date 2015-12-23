@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	font-family:"微软雅黑" Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:white;
+	border:0;
+}a {text-decoration:none;}
+body
+{
+    overflow:hidden;
+	
+}
+div.main {
+	margin: 0 auto;
+	width: 1000px;
+	height: 620px;
+	position: relative;
+}
+
+.backhome{
+	margin:45px 0;
+	float:left;
+}
+
+span{
+	display:block;
+	color:red;
+}
+
+.header{
+	width:300px;
+	font-size:24px;
+}
+
+.headerspace{
+	margin:50px 0;
+}
+
+.memeber {
+	margin: 150px 20px 150px 120px;
+	width: 300px;
+	float: left;
+
+}
+.costomer {
+	float: left;
+	margin: 150px 180px 150px 20px;
+	width: 300px;
+}
+
+.button{
+	background-color:#66ccff;
+	width:90px;
+	height:30px;
+	border:0;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	color:white;
+}
+.button:hover
+{
+    cursor:pointer;
+    filter:alpha(opacity=75);
+	-moz-opacity:0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+	color:White;
+}
+input{
+	color:grey;
+}

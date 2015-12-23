@@ -1,0 +1,13 @@
+网站程序最终版-包含（Movies网站/MovieSpider爬虫/数据库建库脚本/简单说明)
+
+
+
+1.  sql 脚本中的地址需改为为本机数据库文件所在的地址。
+
+2.  爬虫程序中数据源需改为为本机按 1 所建数据库的链接字符串(修改爬虫程序中DataSaver.cs类中的链接字符串。
+    图片保存在爬虫程序bin的Debug 文件中的ings文件夹中 运行时拷贝到网站程序的Movies文件夹中。
+
+3.  网站程序中DataAccessLayer中MoviesData.edmx文件 需根据本机按 1 和 2 所建的数据库重新更新 更新前需先删除DataAccessLayer 层 中和 Movies 网站层中配置文件的链接字符串，更新MoviesData.edmx 后 需 将 DataAccessLayer 层配置文件中的连接字符串复制到 Movies网站层的配置文件中。
+
+
+4.  完成 1 2 3 我们的网站就能在自己的机子上跑起来咯！！！

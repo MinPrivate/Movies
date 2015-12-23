@@ -1,0 +1,18 @@
+C:\Users\Chengmin\Desktop\MoviesProject\MovieSpider\MovieSpider\bin\Debug\MovieSpider.exe
+C:\Users\Chengmin\Desktop\MoviesProject\MovieSpider\MovieSpider\bin\Debug\MovieSpider.pdb
+C:\Users\Chengmin\Desktop\MoviesProject\MovieSpider\MovieSpider\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Chengmin\Desktop\MoviesProject\MovieSpider\MovieSpider\obj\x86\Debug\MovieSpider.Form1.resources
+C:\Users\Chengmin\Desktop\MoviesProject\MovieSpider\MovieSpider\obj\x86\Debug\MovieSpider.Properties.Resources.resources
+C:\Users\Chengmin\Desktop\MoviesProject\MovieSpider\MovieSpider\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Chengmin\Desktop\MoviesProject\MovieSpider\MovieSpider\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Chengmin\Desktop\MoviesProject\MovieSpider\MovieSpider\obj\x86\Debug\MovieSpider.exe
+C:\Users\Chengmin\Desktop\MoviesProject\MovieSpider\MovieSpider\obj\x86\Debug\MovieSpider.pdb
+C:\Users\Chengmin\Desktop\二下 暑期实训\代码管理\爬虫\MovieSpider\MovieSpider\obj\x86\Debug\MovieSpider.exe
+C:\Users\Chengmin\Desktop\二下 暑期实训\代码管理\爬虫\MovieSpider\MovieSpider\obj\x86\Debug\MovieSpider.pdb
+C:\Users\Chengmin\Desktop\二下 暑期实训\代码管理\爬虫\MovieSpider\MovieSpider\bin\Debug\MovieSpider.exe
+C:\Users\Chengmin\Desktop\二下 暑期实训\代码管理\爬虫\MovieSpider\MovieSpider\bin\Debug\MovieSpider.pdb
+C:\Users\Chengmin\Desktop\二下 暑期实训\代码管理\爬虫\MovieSpider\MovieSpider\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Chengmin\Desktop\二下 暑期实训\代码管理\爬虫\MovieSpider\MovieSpider\obj\x86\Debug\MovieSpider.Form1.resources
+C:\Users\Chengmin\Desktop\二下 暑期实训\代码管理\爬虫\MovieSpider\MovieSpider\obj\x86\Debug\MovieSpider.Properties.Resources.resources
+C:\Users\Chengmin\Desktop\二下 暑期实训\代码管理\爬虫\MovieSpider\MovieSpider\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Chengmin\Desktop\二下 暑期实训\代码管理\爬虫\MovieSpider\MovieSpider\obj\x86\Debug\GenerateResource.write.1.tlog

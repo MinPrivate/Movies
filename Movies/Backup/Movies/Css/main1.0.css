@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* CSS Document */
+.mainbox
+{
+	margin: 0 auto;
+	width: 1002px;
+}
+*
+{
+	font-size:14px;
+	font-family:"微软雅黑",arial;
+	color: white;
+}
+a {text-decoration:none;}
+body
+{
+	background-color: #000000;
+}
+select 
+{
+	border:1px;
+	border-style:solid;
+	background-color:#000000;
+	border-color:purple;
+ 	width:95px;
+ 	height:30px;
+ 	color: #FFF;
+}
+option{
+	border:1px;
+	border-style:solid;
+	border-color:Purple;
+	background-color:#000000;
+}
+.search{
+	background-color:black;
+	border-color:purple;
+	width:200px;
+}
+button
+{
+	border: 0px;
+	background-color: #000;
+}
+.word_head
+{
+	text-align: center;
+	position: relative;
+}
+.word_middle
+{
+	text-align: center;
+	color:grey;
+	position: relative;
+	margin-bottom: 3px;
+}
+.word_left
+{
+	text-align: center;
+	position: relative;
+	margin:30px;
+	margin-left: 2px;
+	margin-right: 3px;
+	background-color:Black;
+	border: solid 1px #000;
+}	
+
+.select1
+{
+	
+	height: 25px;
+	width: 120px;
+	float: left;
+	margin-top:30px;
+	margin-right:0px;
+	margin-bottom:00px; 
+	margin-left: 20px;
+}
+.boxa_2
+{
+	height: 40px;
+	width: 120px;
+	float: left;
+	margin-top:30px;
+	margin-right:10px;
+	margin-bottom:00px; 
+	margin-left: 50px;
+}
+.boxa_3
+{
+	height: 50px;
+	width: 250px;
+	float: left;
+	margin-top:30px;
+	margin-right:0px;
+	margin-bottom:00px; 
+	margin-left: 20px;
+}
+.buttona_4
+{
+	height:40px;
+	width: 100px;
+	float: left;
+	margin-top:20px;
+	margin-right:0px;
+	margin-bottom:20px; 
+	margin-left: 0px;
+	background-color:Black;
+	border: solid 1px #000;
+}
+.buttonc1
+{
+	height: 30px;
+	width: 110px;
+	float: left;
+	margin-top:10px;
+	margin-right:40px;
+	margin-bottom:30px; 
+	margin-left: 80px;
+	background-color:Black;
+	border: solid 1px #000;
+}
+.buttonc2
+{
+	height: 30px;
+	width: 110px;
+	float: left;
+	margin-top:10px;
+	margin-right:40px;
+	margin-bottom:30px; 
+	margin-left: 20px;
+    background-color:Black;
+	border: solid 1px #000;
+}
+.buttonc3
+{
+	height: 30px;
+	width: 70px;
+	float: left;
+	margin-top:10px;
+	margin-right:500px;
+	margin-bottom:30px; 
+	margin-left: 20px;
+	background-color:Black;
+	border: solid 1px #000;
+}
+.boxb_1
+{
+	float: left;
+	margin:80px 0;
+}
+.boxb_2
+{
+	float: left;
+	
+
+}
+.buttonb1
+{
+	height:35px;
+	line-height:35px;
+	height: 80px;
+	width: 30px;
+	font-size: 16px;
+	margin-top:20px;
+	margin-right:30px;
+	margin-bottom:10px; 
+	margin-left: 20px;
+	background-color:Black;
+}
+.buttonb2
+{
+	height:20px;
+	line-height:20px;
+	height: 120px;
+	width: 30px;
+	font-size: 16px;
+	margin-top:20px;
+	margin-right:30px;
+	margin-bottom:10px; 
+	margin-left: 20px;
+	background-color:Black;
+}
+.boxb_2
+{
+	background-color: #000;
+	height: 454px;
+	width: 844px;
+}
+.boxb_2a1
+{
+	width: 421px;
+	height: 301px;
+	float: left;
+	margin-top: 1px;
+}
+.boxb_2a11
+{
+	width: 211px;
+	height: 301px;
+	float: left;
+}
+.boxb_2a12
+{
+	width: 205px;
+	height: 301px;
+	margin-left: 5px;
+	float: left;
+}
+.boxb_2a2
+{
+	width: 210px;
+	height: 150px;
+	float: left;
+	margin-top: 1px;
+	margin-right: 0px;
+	margin-left: 1px;
+	margin-bottom: 1px;
+}
+.boxb_2a21
+{
+	width: 105px;
+	height: 150px;
+	float: left;
+}
+.boxb_2a22
+{
+	width: 100px;
+	height: 150px;
+	float: left;
+	margin-left: 5px;
+}
+.boxb_2a3
+{
+	width: 210px;
+	height: 150px;
+	float: left;
+	margin-top: 1px;
+	margin-right: 0px;
+	margin-left: 1px;
+	margin-bottom: 1px;
+}
+.boxb_2a4
+{
+	width: 210px;
+	height: 150px;
+	float: left;
+	margin-top: 0px;
+	margin-left: 1px;
+	margin-right: 0px;
+}
+.boxb_2a5
+{
+	width: 210px;
+	height: 150px;
+	float: left;
+	margin-top: 0px;
+	margin-left: 1px;
+	margin-right: 0px;
+}
+.boxb_2b1
+{
+	width: 210px;
+	height: 150px;
+	float: left;
+	margin-left: 0px;
+	margin-right: 1px;
+	margin-top: 1px;
+}
+.smallimg
+{
+	width: 105px;
+	height: 150px;
+}
+.bigimg
+{
+	width: 211px;
+	height: 301px;
+}
+p{
+	margin:10px 0;
+}

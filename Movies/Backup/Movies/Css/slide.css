@@ -1,0 +1,39 @@
+.slides_container {
+	/*width:844px;*/
+	display:none;
+	width:900px;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+.slides_container  .boxb_2 {
+	/*width:844px;
+	height:454px;*/
+	width:900px;
+	height:525px;
+	display:block;
+}
+
+.pagination {
+	margin: auto;
+	width: 200px;
+}
+.pagination li {
+	list-style:none;
+	padding:0;
+	float:left;
+	margin:0 10px;
+}
+
+/*
+	Optional:
+	Show the current slide in the pagination
+*/
+.pagination .current a {
+	color:red;
+}

@@ -1,0 +1,208 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:微软雅黑,Arial;
+	overflow:hidden;
+}
+.main{
+	width:1070px;
+	height:620px;
+
+}
+.imgback{
+	position:relative;
+	left:180px;
+	top:45px;
+}
+
+.name{
+	width:400px;
+	height:100px;
+	font-size:24px;
+	background-color:#00acff;
+	position:relative;
+	left:330px;
+	top:-10px;
+	color:White;
+	opacity:0.7;
+	}
+
+caption{
+	width:380px;font-size:24px;
+	height:50px;}
+td{font-size:24px;
+	width:190px;
+}
+.buy{
+	color:yellow;
+}
+.pic{
+	width:210px;
+	height:300px;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	left:740px;
+	top:-110px;}
+	
+.store{
+	margin:0px;
+	width:50px;
+	height:50px;
+	left:1000px;
+	top:45px;
+	position:absolute;
+	background-color:#1AECE1;
+	border:0;
+	border-radius:22px;
+}
+
+.intro{
+	width:400px;
+	height:190px;
+	background-color: #00acff;
+	position:relative;
+	left: 330px;
+	top: -300px;
+	opacity:0.7;
+}
+.intro_text{
+	padding:0px;
+	margin:0px;
+	position:relative;
+	height:190px;
+	overflow:auto;
+	display:block；
+}
+.comment{
+	float:both;
+	width:620px;
+	height:250px;
+	position:relative;
+	top:-300px;
+	left:330px;
+ 
+	}
+.combody  {
+	height: 220px;
+	width:630px;
+	overflow:auto;
+	overflow-x:hidden;
+	display:block;
+	background-color:White;
+}
+.swaphead{
+	width:120px;
+	height:22px;
+	float:left;
+	margin:5px 40px;
+	background-color:#1AECE1;
+	text-align:center;
+	border:none;
+}
+
+.ccon{
+	clear:both;
+	width:630px;
+	height:210px;
+	
+	overflow: auto;
+	
+	background-color:White;
+}
+
+.dtcom{
+	
+	width:630px;
+	height:auto;
+	background: url(../image/comhead.jpg) 0 0 repeat-x;
+	border-bottom:1px solid black;
+	
+}
+.comhead{
+	color:Black;
+}
+.swapDiv{
+	width:620px;
+	height:25px;
+	background-color:#0F3;
+	text-align:center;	
+	position:relative;
+	margin: 10px 0px;
+}
+
+.dttime{
+	color:#00F;
+}
+
+.namediv{
+	position:relative;
+	color:black;
+	float: left;
+	height: 30px;
+	width: 200px;
+	margin: 0;	
+	border: 0;
+	padding: 5px 10px 0 30px;
+}
+
+.goodorbad{
+	position:relative;
+	float:right;
+	margin: 0;
+	border: 0;
+	width: 150px;
+	height: 30px;
+	color:red;
+	
+}
+
+
+.mycomment{
+	width:580px;
+	height:180px;
+	margin: 1px auto;
+	background: url(../image/wrap.jpg) 0 0 repeat-x;
+}
+
+.inputclass{
+	width: 580px;
+	height: 125px;
+	margin: 3px auto;
+}
+
+.level{
+	height:25px;
+	width: 580px;
+	margin: 3px auto;
+	} 
+	
+.comimage{
+	margin:0;
+	border:0;
+	padding:0;
+	width:25px;
+	height:25px;
+	float:left;
+	position:relative;
+	}
+	
+.inputbut{
+	background-color: grey;
+	float: right;
+	border:0;
+	width:120px;
+	height: 18px;
+	margin-top:10px;
+	font-size:14px;
+	margin-right: 20px;
+	background-color: purple;
+}
+
+#dituContent{
+	margin:0;
+	padding:0;
+	width:300px;
+	height:320px;
+	}

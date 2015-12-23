@@ -1,0 +1,34 @@
+.msgboxbg {
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align:center;
+}
+.mainmsgbox{
+	background-origin:border-box;
+	border-radius:25px;
+	background-color:white;
+	width:400px;
+	height:300px;
+	margin:120px auto;
+	position: relative;
+}
+.tip{
+	width:120px;
+	color:grey;
+	font-size:12px;
+	margin:30px auto;
+	position: relative;
+}
+.msgcon{
+	color:red;
+	font-size:30px;
+    margin:30px auto;
+    padding:120px auto;
+	position: relative;
+	text-align:center;
+
+}

@@ -1,0 +1,75 @@
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	float: left;
+	width:50px;
+	text-align:center;
+	padding: 2px 5px;
+	background-color:#C6C6C6;
+	margin:0px 4px;
+	color:black;
+}
+.cinema_time {
+	float:left;
+	margin:5px;
+	width: 433px;
+	height: 504px;
+	background-color: #00acff;
+	opacity: 0.7;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	position:relative;
+	overflow:hidden;
+}
+.cinema_time_item {
+	
+	width: 433px;
+	height: auto;
+	background-image: url(image/wrap.jpg);
+	background-repeat: repeat-x;
+	position:relative;
+}
+
+
+
+.cinema_time_item_head {
+	color:#00C;
+	width: 433px;
+	height: 17px;
+	padding: 5px 20px 8px 20px;
+	position:relative;
+	font-weight:bold;
+}
+.cinema_time_item_head:hover{
+	cursor:pointer;	
+}
+
+.cinema_time_item_content {
+	width: 433px;
+	height:32px;
+	padding: 8px 6px 2px 6px;
+	position:relative;
+	background-color:grey;
+}
+.maindetail{
+	width:453px;
+	float:left;
+}
+
+.commonMovieDetail_cinema{
+	background-color:#00acff;
+	width:442px;
+	height:168px;
+	float:left;
+	margin-top:5px;
+	margin-left:6px;
+	margin-right:2.5px;
+	margin-bottom:0px;
+	position:relative;
+	opacity:0.7;	
+}

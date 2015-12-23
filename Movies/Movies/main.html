@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+<style type="text/css">
+      
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	float: left;
+	width:50px;
+	text-align:center;
+	padding: 2px 5px;
+	background-color:#C6C6C6;
+	margin:0px 4px;
+	color:black;
+}
+.cinema_time {
+	float:left;
+	margin:5px;
+	width: 433px;
+	height: 504px;
+	background-color: #00acff;
+	opacity: 0.7;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	position:relative;
+	overflow:hidden;
+}
+.cinema_time_item {
+	
+	width: 433px;
+	height: auto;
+	background-image: url(image/wrap.jpg);
+	background-repeat: repeat-x;
+	position:relative;
+}
+
+
+
+.cinema_time_item_head {
+	color:#00C;
+	width: 433px;
+	height: 17px;
+	padding: 5px 20px 8px 20px;
+	position:relative;
+	font-weight:bold;
+}
+.cinema_time_item_head:hover{
+	cursor:pointer;	
+}
+
+.cinema_time_item_content {
+	width: 433px;
+	height:32px;
+	padding: 8px 6px 2px 6px;
+	position:relative;
+	background-color:grey;
+}
+.maindetail{
+	width:453px;
+	float:left;
+}
+
+.commonMovieDetail_cinema{
+	background-color:#00acff;
+	width:442px;
+	height:168px;
+	float:left;
+	margin-top:5px;
+	margin-left:6px;
+	margin-right:2.5px;
+	margin-bottom:0px;
+	position:relative;
+	opacity:0.7;	
+}
+    </style>
+ <script language="javascript" type="text/javascript">
+ $(function(){
+	$(".cinema_time_item").live('mouseover',function(){
+			$(".cinema_time_item_content").slideUp(0);
+			$(this).children(".cinema_time_item_content").slideDown(0);
+		});	
+		
+	var tmpcount = $(".cinema_time_item_content").length;
+	for(i=2;i < tmpcount;i ++)
+		$(".cinema_time_item_content").eq(i).css("display","none");
+		
+
+});
+ </script>
+
+
+   
+
+ 
+ 
+ <div class="maindetail">
+    <div class="specialMovieDetail">
+      <div class="specialPhoto"> 
+      <!-- <img src="image/6aaf0b8a-69fa-41fc-8cf9-98a2e025e250.jpg"  />-->
+          <img src="image/6aaf0b8a-69fa-41fc-8cf9-98a2e025e250.jpg" class="photoChangeToLarger" />
+      </div>
+      <div class="specialInfo">
+      
+                            <table id="bigTable">
+                            <tr><td>影片名： 画皮2</td></tr>
+                            <tr><td>评分：7.5分  </td></tr>
+                            <tr><td>导演：乌尔善 </td></tr>
+                            <tr><td>主演：赵薇 / 周迅 / 陈坤 </td></tr>
+                            <tr><td>类型： 悬疑 / 爱情 / 奇幻 </td></tr>
+                            <tr><td>地区： 中国 </td></tr>
+                            <tr><td>首映时间：2012-06-28</td></tr>
+                            <tr><td>片长：135 分钟 </td></tr>
+                            </table>
+      
+      
+      </div>
+    </div>
+    <div class="commonMovieDetail_cinema">
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 千年狐妖小唯因打破妖律而受到诅咒，被困于寒冰地狱。虽然小妖雀儿将她救出困境，但寒冰的妖气仍然如跗骨之蛆，紧追着她不放，眼看她已命不久矣。传说一颗纯洁、勇敢、炽烈的人心可以让她重获新生，但必须要人类主动献出他的心。在逃亡的路上，小唯偶遇独身一人的靖公主，她看中了靖公主的心脏，于是跟着公主来到目的地白城。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;白城守边的将军霍心本是公主的青梅竹马，但十五岁时因他保护不力，公主被黑熊伤</p>...
+    </div>
+  </div>
+  <div class="cinema_time">
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head">环艺新民众影城 </div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 45元 </li>
+          <li>  45元</li>
+          <li>  45元 </li>
+          <li> 45元 </li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head">武汉正华影城</div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 45元 </li>
+          <li> 45元 </li>
+          <li> 45元</li>
+          <li> 50元 </li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head">武汉CGV星星影城</div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 100元 </li>
+          <li> 100元 </li>
+          <li> 100元 </li>
+          <li> 100元</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head">天汇影城</div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 40元 </li>
+          <li> 40元</li>
+          <li> 50元</li>
+          <li> 50元</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head">武汉中影天河国际影城</div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 50元</li>
+          <li> 50元 </li>
+          <li> 50元 </li>
+          <li> 50元 </li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head">武商摩尔国际电影城</div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 50元 </li>
+          <li> 120元</li>
+          <li> 50元 </li>
+          <li> 50元</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head">武汉环银电影城</div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+         <li> 50元 </li>
+          <li> 120元</li>
+          <li> 50元 </li>
+          <li> 50元</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head">武汉万达影城（菱角湖店）</div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+         <li> 50元 </li>
+          <li> 120元</li>
+          <li> 50元 </li>
+          <li> 50元</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head">洪山天河国际影城</div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+           li> 50元 </li>
+          <li> 120元</li>
+          <li> 50元 </li>
+          <li> 50元</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head">江汉环球电影城</div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+           li> 50元 </li>
+          <li> 120元</li>
+          <li> 50元 </li>
+          <li> 50元</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head"></div>
+      <div class="cinema_time_item_content">
+        <ul>
+          li> 50元 </li>
+          <li> 120元</li>
+          <li> 50元 </li>
+          <li> 50元</li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 111 </li>
+          <li> 160 </li>
+          <li> 117 </li>
+          <li> 200 </li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head"></div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 111 </li>
+          <li> 160 </li>
+          <li> 117 </li>
+          <li> 200 </li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head"></div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 111 </li>
+          <li> 160 </li>
+          <li> 117 </li>
+          <li> 200 </li>
+        </ul>
+      </div>
+    </div>
+    <div class="cinema_time_item">
+      <div class="cinema_time_item_head"></div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 13:50 </li>
+          <li> 16:10 </li>
+          <li> 17:50 </li>
+          <li> 20:10 </li>
+        </ul>
+      </div>
+      <div class="cinema_time_item_content">
+        <ul>
+          <li> 111 </li>
+          <li> 160 </li>
+          <li> 117 </li>
+          <li> 200 </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

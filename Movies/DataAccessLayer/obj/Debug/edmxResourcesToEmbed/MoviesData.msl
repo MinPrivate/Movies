@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WATCHMOVIEModelStoreContainer" CdmEntityContainer="WATCHMOVIEEntities">
+    <EntitySetMapping Name="CINAME_COMMENT">
+      <EntityTypeMapping TypeName="WATCHMOVIEModel.CINAME_COMMENT">
+        <MappingFragment StoreEntitySet="CINAME_COMMENT">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="cinema_id" ColumnName="cinema_id" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="support" ColumnName="support" />
+          <ScalarProperty Name="oppose" ColumnName="oppose" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CINEMA">
+      <EntityTypeMapping TypeName="WATCHMOVIEModel.CINEMA">
+        <MappingFragment StoreEntitySet="CINEMA">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="start_work_time" ColumnName="start_work_time" />
+          <ScalarProperty Name="end_work_time" ColumnName="end_work_time" />
+          <ScalarProperty Name="introduction" ColumnName="introduction" />
+          <ScalarProperty Name="website" ColumnName="website" />
+          <ScalarProperty Name="rank" ColumnName="rank" />
+          <ScalarProperty Name="rank_number" ColumnName="rank_number" />
+          <ScalarProperty Name="path" ColumnName="path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CINEMA_PICTURE">
+      <EntityTypeMapping TypeName="WATCHMOVIEModel.CINEMA_PICTURE">
+        <MappingFragment StoreEntitySet="CINEMA_PICTURE">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="cinema_id" ColumnName="cinema_id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="path" ColumnName="path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COLLECTION">
+      <EntityTypeMapping TypeName="WATCHMOVIEModel.COLLECTION">
+        <MappingFragment StoreEntitySet="COLLECTION">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="movie_id" ColumnName="movie_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CRITIC_COMMENT">
+      <EntityTypeMapping TypeName="WATCHMOVIEModel.CRITIC_COMMENT">
+        <MappingFragment StoreEntitySet="CRITIC_COMMENT">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="critic_id" ColumnName="critic_id" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="support" ColumnName="support" />
+          <ScalarProperty Name="oppose" ColumnName="oppose" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FILM_CRITIC">
+      <EntityTypeMapping TypeName="WATCHMOVIEModel.FILM_CRITIC">
+        <MappingFragment StoreEntitySet="FILM_CRITIC">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="movie_id" ColumnName="movie_id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="support" ColumnName="support" />
+          <ScalarProperty Name="oppose" ColumnName="oppose" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MOVIE">
+      <EntityTypeMapping TypeName="WATCHMOVIEModel.MOVIE">
+        <MappingFragment StoreEntitySet="MOVIE">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="director" ColumnName="director" />
+          <ScalarProperty Name="actor" ColumnName="actor" />
+          <ScalarProperty Name="kind" ColumnName="kind" />
+          <ScalarProperty Name="region" ColumnName="region" />
+          <ScalarProperty Name="last_time" ColumnName="last_time" />
+          <ScalarProperty Name="first_showtime" ColumnName="first_showtime" />
+          <ScalarProperty Name="introduction" ColumnName="introduction" />
+          <ScalarProperty Name="rank" ColumnName="rank" />
+          <ScalarProperty Name="rank_number" ColumnName="rank_number" />
+          <ScalarProperty Name="click_number" ColumnName="click_number" />
+          <ScalarProperty Name="path" ColumnName="path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MOVIE_COMMENT">
+      <EntityTypeMapping TypeName="WATCHMOVIEModel.MOVIE_COMMENT">
+        <MappingFragment StoreEntitySet="MOVIE_COMMENT">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="movie_id" ColumnName="movie_id" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="body" ColumnName="body" />
+          <ScalarProperty Name="support" ColumnName="support" />
+          <ScalarProperty Name="oppose" ColumnName="oppose" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MOVIE_PICTURE">
+      <EntityTypeMapping TypeName="WATCHMOVIEModel.MOVIE_PICTURE">
+        <MappingFragment StoreEntitySet="MOVIE_PICTURE">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="movie_id" ColumnName="movie_id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="path" ColumnName="path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MOVIE_SCHEDULE">
+      <EntityTypeMapping TypeName="WATCHMOVIEModel.MOVIE_SCHEDULE">
+        <MappingFragment StoreEntitySet="MOVIE_SCHEDULE">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="movie_id" ColumnName="movie_id" />
+          <ScalarProperty Name="cinema_id" ColumnName="cinema_id" />
+          <ScalarProperty Name="showtime" ColumnName="showtime" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="kind" ColumnName="kind" />
+          <ScalarProperty Name="book_website" ColumnName="book_website" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RUSER">
+      <EntityTypeMapping TypeName="WATCHMOVIEModel.RUSER">
+        <MappingFragment StoreEntitySet="RUSER">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="like_kind" ColumnName="like_kind" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

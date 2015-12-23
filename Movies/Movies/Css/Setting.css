@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	font-size:16px;
+	font-family:"微软雅黑",arial;
+	color: black;
+	
+	
+}
+a {text-decoration:none;}
+.main{
+	margin:0 auto;
+	width:1002px;
+	position:relative;
+	
+}
+.img{
+	margin:45px 0px;
+}
+body
+{
+overflow:hidden;
+background-image: url(/image/b4.jpg);
+}
+
+.prompt1
+	{
+	position: relative;
+	left: 220px;
+	top: 0px;
+	font-size:22px;
+	color:White;
+	}
+.prompt2
+	{
+	position: relative;
+	left: 300px;
+	top: 35px;
+	color:White;
+	}
+.oldpsw
+	{
+	position: relative;
+	left: 400px;
+	top: 10px;
+	
+	}
+.prompt3
+	{
+	position: relative;
+	left: 300px;
+	top: 60px;
+	color:White;
+	}
+.newpsw
+	{
+	position:  relative;
+	left: 400px;
+	top: 34px;
+
+	}
+.prompt4
+	{
+	position: relative;
+	left: 300px;
+	top: 55px;
+	color:White;
+	}
+.newpsw_re
+	{
+	position:  relative;
+	left: 400px;
+	top: 32px;
+	
+	}
+
+.submit{
+
+	height: 50px;
+	width: 120px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	position: relative;
+	left: 400px;
+	top: 50px;
+}
+.button{
+	color:white;
+	width:120px;
+	height:inherit;
+	background-color:#2E50C2;
+	position:relative;
+	padding:15px 15px;
+	opacity:0.8;
+}
+.button:hover
+{
+    color:gray;
+    cursor:pointer;
+    opacity:0.6;
+}8
+.error{
+	position:  relative;
+	left: 400px;
+	top: 32px;
+	height:30px;
+	color:red;
+}

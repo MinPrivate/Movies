@@ -1,0 +1,36 @@
+C:\Users\Chengmin\Desktop\MoviesProject\Movies\Movies\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Chengmin\Desktop\MoviesProject\Movies\Movies\bin\Movies.dll
+C:\Users\Chengmin\Desktop\MoviesProject\Movies\Movies\bin\Movies.pdb
+C:\Users\Chengmin\Desktop\MoviesProject\Movies\Movies\bin\BusinessLogicLayer.dll
+C:\Users\Chengmin\Desktop\MoviesProject\Movies\Movies\bin\DataAccessLayer.dll
+C:\Users\Chengmin\Desktop\MoviesProject\Movies\Movies\bin\BusinessLogicLayer.pdb
+C:\Users\Chengmin\Desktop\MoviesProject\Movies\Movies\bin\DataAccessLayer.pdb
+C:\Users\Chengmin\Desktop\MoviesProject\Movies\Movies\obj\Debug\Movies.dll
+C:\Users\Chengmin\Desktop\MoviesProject\Movies\Movies\obj\Debug\Movies.pdb
+C:\Users\IceBlock\Desktop\MoviesProject\Movies\Movies\bin\Movies.dll
+C:\Users\IceBlock\Desktop\MoviesProject\Movies\Movies\bin\Movies.pdb
+C:\Users\IceBlock\Desktop\MoviesProject\Movies\Movies\bin\BusinessLogicLayer.dll
+C:\Users\IceBlock\Desktop\MoviesProject\Movies\Movies\bin\DataAccessLayer.dll
+C:\Users\IceBlock\Desktop\MoviesProject\Movies\Movies\bin\BusinessLogicLayer.pdb
+C:\Users\IceBlock\Desktop\MoviesProject\Movies\Movies\bin\DataAccessLayer.pdb
+C:\Users\IceBlock\Desktop\MoviesProject\Movies\Movies\obj\Debug\Movies.csprojResolveAssemblyReference.cache
+C:\Users\IceBlock\Desktop\MoviesProject\Movies\Movies\obj\Debug\Movies.dll
+C:\Users\IceBlock\Desktop\MoviesProject\Movies\Movies\obj\Debug\Movies.pdb
+C:\Users\Chengmin\Desktop\网站程序最终版-包含（Movies网站.MovieSpider爬虫.数据库建库脚本.简单说明）\Movies\Movies\bin\Movies.dll
+C:\Users\Chengmin\Desktop\网站程序最终版-包含（Movies网站.MovieSpider爬虫.数据库建库脚本.简单说明）\Movies\Movies\bin\Movies.pdb
+C:\Users\Chengmin\Desktop\网站程序最终版-包含（Movies网站.MovieSpider爬虫.数据库建库脚本.简单说明）\Movies\Movies\bin\BusinessLogicLayer.dll
+C:\Users\Chengmin\Desktop\网站程序最终版-包含（Movies网站.MovieSpider爬虫.数据库建库脚本.简单说明）\Movies\Movies\bin\DataAccessLayer.dll
+C:\Users\Chengmin\Desktop\网站程序最终版-包含（Movies网站.MovieSpider爬虫.数据库建库脚本.简单说明）\Movies\Movies\bin\BusinessLogicLayer.pdb
+C:\Users\Chengmin\Desktop\网站程序最终版-包含（Movies网站.MovieSpider爬虫.数据库建库脚本.简单说明）\Movies\Movies\bin\DataAccessLayer.pdb
+C:\Users\Chengmin\Desktop\网站程序最终版-包含（Movies网站.MovieSpider爬虫.数据库建库脚本.简单说明）\Movies\Movies\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Chengmin\Desktop\网站程序最终版-包含（Movies网站.MovieSpider爬虫.数据库建库脚本.简单说明）\Movies\Movies\obj\Debug\Movies.dll
+C:\Users\Chengmin\Desktop\网站程序最终版-包含（Movies网站.MovieSpider爬虫.数据库建库脚本.简单说明）\Movies\Movies\obj\Debug\Movies.pdb
+E:\学思\武汉大学\课内实训\二下暑期.Net 实训\二下 暑期实训\爱看电影网\代码管理\后台代码\终版\网站程序最终版(演示版）\Movies\Movies\bin\Movies.dll
+E:\学思\武汉大学\课内实训\二下暑期.Net 实训\二下 暑期实训\爱看电影网\代码管理\后台代码\终版\网站程序最终版(演示版）\Movies\Movies\bin\Movies.pdb
+E:\学思\武汉大学\课内实训\二下暑期.Net 实训\二下 暑期实训\爱看电影网\代码管理\后台代码\终版\网站程序最终版(演示版）\Movies\Movies\bin\BusinessLogicLayer.dll
+E:\学思\武汉大学\课内实训\二下暑期.Net 实训\二下 暑期实训\爱看电影网\代码管理\后台代码\终版\网站程序最终版(演示版）\Movies\Movies\bin\DataAccessLayer.dll
+E:\学思\武汉大学\课内实训\二下暑期.Net 实训\二下 暑期实训\爱看电影网\代码管理\后台代码\终版\网站程序最终版(演示版）\Movies\Movies\bin\BusinessLogicLayer.pdb
+E:\学思\武汉大学\课内实训\二下暑期.Net 实训\二下 暑期实训\爱看电影网\代码管理\后台代码\终版\网站程序最终版(演示版）\Movies\Movies\bin\DataAccessLayer.pdb
+E:\学思\武汉大学\课内实训\二下暑期.Net 实训\二下 暑期实训\爱看电影网\代码管理\后台代码\终版\网站程序最终版(演示版）\Movies\Movies\obj\Debug\Movies.csprojResolveAssemblyReference.cache
+E:\学思\武汉大学\课内实训\二下暑期.Net 实训\二下 暑期实训\爱看电影网\代码管理\后台代码\终版\网站程序最终版(演示版）\Movies\Movies\obj\Debug\Movies.dll
+E:\学思\武汉大学\课内实训\二下暑期.Net 实训\二下 暑期实训\爱看电影网\代码管理\后台代码\终版\网站程序最终版(演示版）\Movies\Movies\obj\Debug\Movies.pdb
